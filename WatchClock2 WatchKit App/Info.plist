@@ -26,7 +26,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.xwcoco.WatchClock2</string>
+	<string>com.dfsoft.watchClock</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>

@@ -19,6 +19,8 @@
 		4FD8FC8321A3AE74003E4936 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8FC8221A3AE74003E4936 /* InterfaceController.swift */; };
 		4FD8FC8521A3AE74003E4936 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8FC8421A3AE74003E4936 /* ExtensionDelegate.swift */; };
 		4FD8FC8721A3AE75003E4936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD8FC8621A3AE75003E4936 /* Assets.xcassets */; };
+		4FFC8AC021A3F332003ACFAB /* WatchSetViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFC8ABF21A3F332003ACFAB /* WatchSetViewControl.swift */; };
+		4FFC8AC221A3F867003ACFAB /* WatchManagerViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFC8AC121A3F867003ACFAB /* WatchManagerViewControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		4FD8FC8421A3AE74003E4936 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		4FD8FC8621A3AE75003E4936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FD8FC8821A3AE75003E4936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FFC8ABF21A3F332003ACFAB /* WatchSetViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSetViewControl.swift; sourceTree = "<group>"; };
+		4FFC8AC121A3F867003ACFAB /* WatchManagerViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchManagerViewControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 				4FD8FC6621A3AE74003E4936 /* Assets.xcassets */,
 				4FD8FC6821A3AE74003E4936 /* LaunchScreen.storyboard */,
 				4FD8FC6B21A3AE74003E4936 /* Info.plist */,
+				4FFC8ABF21A3F332003ACFAB /* WatchSetViewControl.swift */,
+				4FFC8AC121A3F867003ACFAB /* WatchManagerViewControl.swift */,
 			);
 			path = WatchClock2;
 			sourceTree = "<group>";
@@ -165,6 +171,7 @@
 				4FD8FC5921A3AE73003E4936 /* Frameworks */,
 				4FD8FC5A21A3AE73003E4936 /* Resources */,
 				4FD8FC9221A3AE75003E4936 /* Embed Watch Content */,
+				4FD8FC9621A3AEFF003E4936 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -281,6 +288,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4FD8FC9621A3AEFF003E4936 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# #! /bin/bash\ninfoPlist=\"${INFOPLIST_FILE}\"\n#! GET CFBundleBuildNumber value\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleBuildNumber\" ${infoPlist})\n#! CFBundleBuildNumber + 1\nbuildNumber=$((${buildNumber} + 1))\n#! SET CFBundleBuildNumber on Info.plist\n/usr/libexec/PlistBuddy -c \"Set :CFBundleBuildNumber ${buildNumber}\" ${infoPlist}\n#! GET CFBundleShortVersionString\nshortVersion=$(/usr/libexec/PlistBuddy -c \"Print :CFBundleShortVersionString\" ${infoPlist})\n#! Composes the buildNumber as CFBundleVersion\nbuildNumber=\"${shortVersion}.${buildNumber}\"\n#! SET CFBundleVersion\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${buildNumber}\" ${infoPlist}\n#! GET date string\nbuildDate=\"$(date +%Y.%m.%d.%H:%M:%S)\"\n#! SET CFBundleBuildDate\n/usr/libexec/PlistBuddy -c \"Set :CFBundleBuildDate ${buildDate}\" ${infoPlist}\n\n#! xcrun agvtool new-version -all ${buildNumber}# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4FD8FC5821A3AE73003E4936 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -288,6 +315,8 @@
 			files = (
 				4FD8FC6221A3AE73003E4936 /* ViewController.swift in Sources */,
 				4FD8FC6021A3AE73003E4936 /* AppDelegate.swift in Sources */,
+				4FFC8AC221A3F867003ACFAB /* WatchManagerViewControl.swift in Sources */,
+				4FFC8AC021A3F332003ACFAB /* WatchSetViewControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +500,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xwcoco.WatchClock2.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dfsoft.watchClock.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -493,7 +522,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xwcoco.WatchClock2.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dfsoft.watchClock.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -512,7 +541,7 @@
 				DEVELOPMENT_TEAM = 4E49FXN2FU;
 				IBSC_MODULE = WatchClock2_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchClock2 WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xwcoco.WatchClock2.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dfsoft.watchClock.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -531,7 +560,7 @@
 				DEVELOPMENT_TEAM = 4E49FXN2FU;
 				IBSC_MODULE = WatchClock2_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchClock2 WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xwcoco.WatchClock2.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dfsoft.watchClock.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -552,7 +581,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xwcoco.WatchClock2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dfsoft.watchClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -570,7 +599,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xwcoco.WatchClock2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dfsoft.watchClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

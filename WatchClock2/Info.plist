@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleBuildDate</key>
-	<string>2018.11.20.17:32:53</string>
+	<string>2018.11.21.18:52:58</string>
 	<key>CFBundleBuildNumber</key>
-	<string>60</string>
+	<string>239</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -21,9 +21,14 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.60</string>
+	<string>1.0.239</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

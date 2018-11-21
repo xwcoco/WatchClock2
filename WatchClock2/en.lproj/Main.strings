@@ -1,0 +1,66 @@
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "3jb-Fk-vVh"; */
+"3jb-Fk-vVh.title" = "Item";
+
+/* Class = "UILabel"; text = "Logo"; ObjectID = "A1Y-Iy-gOO"; */
+"A1Y-Iy-gOO.text" = "Logo";
+
+/* Class = "UILabel"; text = "Second Style"; ObjectID = "HUg-rb-bti"; */
+"HUg-rb-bti.text" = "Second Style";
+
+/* Class = "UILabel"; text = "Dist To Center"; ObjectID = "Hgl-CF-WKH"; */
+"Hgl-CF-WKH.text" = "Dist To Center";
+
+/* Class = "UITableViewSection"; headerTitle = "Logo"; ObjectID = "IpE-Q5-nBP"; */
+"IpE-Q5-nBP.headerTitle" = "Logo";
+
+/* Class = "UITableViewSection"; headerTitle = "Face Style"; ObjectID = "MJv-T4-zG9"; */
+"MJv-T4-zG9.headerTitle" = "Face Style";
+
+/* Class = "UITabBarItem"; title = "Watch List"; ObjectID = "XmQ-oW-Oyb"; */
+"XmQ-oW-Oyb.title" = "Watch List";
+
+/* Class = "UILabel"; text = "Left"; ObjectID = "XtU-no-His"; */
+"XtU-no-His.text" = "Left";
+
+/* Class = "UILabel"; text = "Background Image"; ObjectID = "Y5E-eZ-o1Y"; */
+"Y5E-eZ-o1Y.text" = "Background Image";
+
+/* Class = "UINavigationItem"; title = "Watch List"; ObjectID = "YWT-lc-UX8"; */
+"YWT-lc-UX8.title" = "Watch List";
+
+/* Class = "UILabel"; text = "Image Name"; ObjectID = "b9Q-eV-hvI"; */
+"b9Q-eV-hvI.text" = "Image Name";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "c9A-Qp-vZM"; */
+"c9A-Qp-vZM.title" = "Settings";
+
+/* Class = "UILabel"; text = "Face Style"; ObjectID = "gKN-sU-xZ4"; */
+"gKN-sU-xZ4.text" = "Face Style";
+
+/* Class = "UINavigationItem"; title = "Image Select"; ObjectID = "grf-z6-NRp"; */
+"grf-z6-NRp.title" = "Image Select";
+
+/* Class = "UILabel"; text = "Right"; ObjectID = "hKO-lG-OgM"; */
+"hKO-lG-OgM.text" = "Right";
+
+/* Class = "UITableViewSection"; headerTitle = "Text"; ObjectID = "ovz-lT-51D"; */
+"ovz-lT-51D.headerTitle" = "Text";
+
+/* Class = "UILabel"; text = "Bottom"; ObjectID = "tbr-Np-ANO"; */
+"tbr-Np-ANO.text" = "Bottom";
+
+/* Class = "UILabel"; text = "Hour Style"; ObjectID = "uWT-87-2nl"; */
+"uWT-87-2nl.text" = "Hour Style";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "vEe-Yc-68l"; */
+"vEe-Yc-68l.title" = "Settings";
+
+/* Class = "UITabBarItem"; title = "About"; ObjectID = "wT8-J4-DH6"; */
+"wT8-J4-DH6.title" = "About";
+
+/* Class = "UITableViewSection"; headerTitle = "Demo"; ObjectID = "x6q-2I-02q"; */
+"x6q-2I-02q.headerTitle" = "Demo";
+
+/* Class = "UILabel"; text = "Minute Style"; ObjectID = "xUb-4v-vMO"; */
+"xUb-4v-vMO.text" = "Minute Style";

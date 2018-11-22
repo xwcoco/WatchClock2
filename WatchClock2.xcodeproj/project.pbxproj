@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F10C63021A63F340016305F /* IWatchSessionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10C62F21A63F340016305F /* IWatchSessionUtil.swift */; };
+		4F10C63821A641060016305F /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10C63721A641060016305F /* Toast.swift */; };
+		4F10C63A21A64CA20016305F /* SetupViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10C63921A64CA20016305F /* SetupViewControl.swift */; };
+		4F10C63C21A64D660016305F /* WeatherLocationViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10C63B21A64D660016305F /* WeatherLocationViewControl.swift */; };
+		4F10C63E21A64DAF0016305F /* WeatherLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10C63D21A64DAF0016305F /* WeatherLocation.swift */; };
+		4F10C64021A656330016305F /* AboutViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10C63F21A656330016305F /* AboutViewControl.swift */; };
+		4F10C64521A658C00016305F /* HermesCAPECOD.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F10C64121A658BB0016305F /* HermesCAPECOD.otf */; };
+		4F10C64621A658C00016305F /* HermesCAPECODOutline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F10C64221A658BB0016305F /* HermesCAPECODOutline.otf */; };
+		4F10C64721A658C00016305F /* HermesCARRICK.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F10C64321A658BB0016305F /* HermesCARRICK.otf */; };
+		4F10C64821A658C00016305F /* HermesESPACE.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F10C64421A658BC0016305F /* HermesESPACE.otf */; };
+		4F10C64921A658C10016305F /* HermesCAPECOD.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F10C64121A658BB0016305F /* HermesCAPECOD.otf */; };
+		4F10C64A21A658C10016305F /* HermesCAPECODOutline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F10C64221A658BB0016305F /* HermesCAPECODOutline.otf */; };
+		4F10C64B21A658C10016305F /* HermesCARRICK.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F10C64321A658BB0016305F /* HermesCARRICK.otf */; };
+		4F10C64C21A658C10016305F /* HermesESPACE.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F10C64421A658BC0016305F /* HermesESPACE.otf */; };
+		4F10C64E21A65CB50016305F /* MainViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10C64D21A65CB50016305F /* MainViewControl.swift */; };
 		4F2E45D021A43A1C006F3C19 /* FaceStyleViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2E45CF21A43A1C006F3C19 /* FaceStyleViewControl.swift */; };
 		4F2E45D221A4450A006F3C19 /* ImageSelectViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2E45D121A4450A006F3C19 /* ImageSelectViewControl.swift */; };
 		4F2E45D621A4A938006F3C19 /* ColorSelectViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2E45D521A4A938006F3C19 /* ColorSelectViewControl.swift */; };
@@ -87,6 +102,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4F10C62F21A63F340016305F /* IWatchSessionUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWatchSessionUtil.swift; sourceTree = "<group>"; };
+		4F10C63721A641060016305F /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		4F10C63921A64CA20016305F /* SetupViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewControl.swift; sourceTree = "<group>"; };
+		4F10C63B21A64D660016305F /* WeatherLocationViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocationViewControl.swift; sourceTree = "<group>"; };
+		4F10C63D21A64DAF0016305F /* WeatherLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherLocation.swift; sourceTree = "<group>"; };
+		4F10C63F21A656330016305F /* AboutViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewControl.swift; sourceTree = "<group>"; };
+		4F10C64121A658BB0016305F /* HermesCAPECOD.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HermesCAPECOD.otf; sourceTree = "<group>"; };
+		4F10C64221A658BB0016305F /* HermesCAPECODOutline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HermesCAPECODOutline.otf; sourceTree = "<group>"; };
+		4F10C64321A658BB0016305F /* HermesCARRICK.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HermesCARRICK.otf; sourceTree = "<group>"; };
+		4F10C64421A658BC0016305F /* HermesESPACE.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HermesESPACE.otf; sourceTree = "<group>"; };
+		4F10C64D21A65CB50016305F /* MainViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControl.swift; sourceTree = "<group>"; };
 		4F2E45CF21A43A1C006F3C19 /* FaceStyleViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceStyleViewControl.swift; sourceTree = "<group>"; };
 		4F2E45D121A4450A006F3C19 /* ImageSelectViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewControl.swift; sourceTree = "<group>"; };
 		4F2E45D521A4A938006F3C19 /* ColorSelectViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectViewControl.swift; sourceTree = "<group>"; };
@@ -164,6 +190,7 @@
 		4FD8FC5E21A3AE73003E4936 /* WatchClock2 */ = {
 			isa = PBXGroup;
 			children = (
+				4F10C63721A641060016305F /* Toast.swift */,
 				4FD8FC5F21A3AE73003E4936 /* AppDelegate.swift */,
 				4FD8FC6121A3AE73003E4936 /* ViewController.swift */,
 				4FD8FC6321A3AE73003E4936 /* Main.storyboard */,
@@ -179,6 +206,12 @@
 				4F2E45D721A4A983006F3C19 /* FaceCustomViewControl.swift */,
 				4FDE09E621A50F4300224AF8 /* FontSelectViewControl.swift */,
 				4FDE09E821A5260900224AF8 /* DisplayTextViewControl.swift */,
+				4F10C62F21A63F340016305F /* IWatchSessionUtil.swift */,
+				4F10C63921A64CA20016305F /* SetupViewControl.swift */,
+				4F10C63D21A64DAF0016305F /* WeatherLocation.swift */,
+				4F10C63B21A64D660016305F /* WeatherLocationViewControl.swift */,
+				4F10C63F21A656330016305F /* AboutViewControl.swift */,
+				4F10C64D21A65CB50016305F /* MainViewControl.swift */,
 			);
 			path = WatchClock2;
 			sourceTree = "<group>";
@@ -196,6 +229,10 @@
 		4FD8FC8121A3AE74003E4936 /* WatchClock2 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4F10C64121A658BB0016305F /* HermesCAPECOD.otf */,
+				4F10C64221A658BB0016305F /* HermesCAPECODOutline.otf */,
+				4F10C64321A658BB0016305F /* HermesCARRICK.otf */,
+				4F10C64421A658BC0016305F /* HermesESPACE.otf */,
 				4F65D96A21A420310046B75C /* MyUIApplication.h */,
 				4F65D96921A420310046B75C /* MyUiApplication.m */,
 				4FD8FC8221A3AE74003E4936 /* InterfaceController.swift */,
@@ -319,9 +356,13 @@
 			files = (
 				4FD8FC6A21A3AE74003E4936 /* LaunchScreen.storyboard in Resources */,
 				4FD8FC6721A3AE74003E4936 /* Assets.xcassets in Resources */,
+				4F10C64621A658C00016305F /* HermesCAPECODOutline.otf in Resources */,
+				4F10C64721A658C00016305F /* HermesCARRICK.otf in Resources */,
 				4FFC8ACC21A40F51003ACFAB /* Assets.xcassets in Resources */,
 				4FD8FC6521A3AE73003E4936 /* Main.storyboard in Resources */,
 				4F65D96F21A420FC0046B75C /* FaceScene.sks in Resources */,
+				4F10C64521A658C00016305F /* HermesCAPECOD.otf in Resources */,
+				4F10C64821A658C00016305F /* HermesESPACE.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +381,10 @@
 			files = (
 				4FD8FC8721A3AE75003E4936 /* Assets.xcassets in Resources */,
 				4F65D96E21A420E10046B75C /* FaceScene.sks in Resources */,
+				4F10C64C21A658C10016305F /* HermesESPACE.otf in Resources */,
+				4F10C64B21A658C10016305F /* HermesCARRICK.otf in Resources */,
+				4F10C64A21A658C10016305F /* HermesCAPECODOutline.otf in Resources */,
+				4F10C64921A658C10016305F /* HermesCAPECOD.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +406,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# #! /bin/bash\ninfoPlist=\"${INFOPLIST_FILE}\"\n#! GET CFBundleBuildNumber value\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleBuildNumber\" ${infoPlist})\n#! CFBundleBuildNumber + 1\nbuildNumber=$((${buildNumber} + 1))\n#! SET CFBundleBuildNumber on Info.plist\n/usr/libexec/PlistBuddy -c \"Set :CFBundleBuildNumber ${buildNumber}\" ${infoPlist}\n#! GET CFBundleShortVersionString\nshortVersion=$(/usr/libexec/PlistBuddy -c \"Print :CFBundleShortVersionString\" ${infoPlist})\n#! Composes the buildNumber as CFBundleVersion\nbuildNumber=\"${shortVersion}.${buildNumber}\"\n#! SET CFBundleVersion\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${buildNumber}\" ${infoPlist}\n#! GET date string\nbuildDate=\"$(date +%Y.%m.%d.%H:%M:%S)\"\n#! SET CFBundleBuildDate\n/usr/libexec/PlistBuddy -c \"Set :CFBundleBuildDate ${buildDate}\" ${infoPlist}\n\n#! xcrun agvtool new-version -all ${buildNumber}# Type a script or drag a script file from your workspace to insert its path.\n";
+			shellScript = "# #! /bin/bash\ninfoPlist=\"${INFOPLIST_FILE}\"\n#! GET CFBundleBuildNumber value\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleBuildNumber\" ${infoPlist})\n#! CFBundleBuildNumber + 1\nbuildNumber=$((${buildNumber} + 1))\n#! SET CFBundleBuildNumber on Info.plist\n/usr/libexec/PlistBuddy -c \"Set :CFBundleBuildNumber ${buildNumber}\" ${infoPlist}\n#! GET CFBundleShortVersionString\nshortVersion=$(/usr/libexec/PlistBuddy -c \"Print :CFBundleShortVersionString\" ${infoPlist})\n#! Composes the buildNumber as CFBundleVersion\nbuildNumber=\"${shortVersion}.${buildNumber}\"\n#! SET CFBundleVersion\n#/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${buildNumber}\" ${infoPlist}\n#! GET date string\nbuildDate=\"$(date +%Y.%m.%d.%H:%M:%S)\"\n#! SET CFBundleBuildDate\n/usr/libexec/PlistBuddy -c \"Set :CFBundleBuildDate ${buildDate}\" ${infoPlist}\n\n#! xcrun agvtool new-version -all ${buildNumber}# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -371,13 +416,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FFC8AD121A40F9C003ACFAB /* Weather.swift in Sources */,
+				4F10C64E21A65CB50016305F /* MainViewControl.swift in Sources */,
 				4F2E45D821A4A983006F3C19 /* FaceCustomViewControl.swift in Sources */,
+				4F10C63821A641060016305F /* Toast.swift in Sources */,
 				4FD8FC6221A3AE73003E4936 /* ViewController.swift in Sources */,
 				4FDE09E721A50F4300224AF8 /* FontSelectViewControl.swift in Sources */,
+				4F10C63E21A64DAF0016305F /* WeatherLocation.swift in Sources */,
+				4F10C63021A63F340016305F /* IWatchSessionUtil.swift in Sources */,
 				4F2E45D621A4A938006F3C19 /* ColorSelectViewControl.swift in Sources */,
 				4FB264DA21A41BA500B3A950 /* UIExtersions.swift in Sources */,
 				4F2E45D021A43A1C006F3C19 /* FaceStyleViewControl.swift in Sources */,
 				4FD8FC6021A3AE73003E4936 /* AppDelegate.swift in Sources */,
+				4F10C63C21A64D660016305F /* WeatherLocationViewControl.swift in Sources */,
+				4F10C63A21A64CA20016305F /* SetupViewControl.swift in Sources */,
+				4F10C64021A656330016305F /* AboutViewControl.swift in Sources */,
 				4FFC8AC221A3F867003ACFAB /* WatchManagerViewControl.swift in Sources */,
 				4FFC8AC621A40D6A003ACFAB /* WatchSettings.swift in Sources */,
 				4FFC8ACE21A40F7E003ACFAB /* WatchInfo.swift in Sources */,

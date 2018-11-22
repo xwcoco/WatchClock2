@@ -492,7 +492,9 @@ class WatchInfo: Codable {
             self.updateCounter = 0
         }
         if (updateCounter == 0) {
-            self.delegate?.UpdateWatchInfo(refresh: true)
+            DispatchQueue.main.async {
+                self.delegate?.UpdateWatchInfo(refresh: true)
+            }
         }
     }
 

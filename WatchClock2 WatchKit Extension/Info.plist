@@ -24,7 +24,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>1.0.269</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionAttributes</key>
@@ -37,5 +37,12 @@
 	</dict>
 	<key>WKExtensionDelegateClassName</key>
 	<string>$(PRODUCT_MODULE_NAME).ExtensionDelegate</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>HermesCAPECODOutline.otf</string>
+		<string>hermesCAPECOD.otf</string>
+		<string>HermesCARRICK.otf</string>
+		<string>HermesESPACE.otf</string>
+	</array>
 </dict>
 </plist>

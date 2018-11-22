@@ -123,6 +123,7 @@ class WatchSettings: NSObject, CnWeatherProtocol {
         set {
             sharedInstance._weekStyle = newValue
             UserDefaults.standard.set(newValue, forKey: "WeekStyle")
+            sharedInstance.settingChanged()
         }
     }
 
@@ -136,6 +137,7 @@ class WatchSettings: NSObject, CnWeatherProtocol {
         set {
             sharedInstance._weatherIconSize = newValue
             UserDefaults.standard.set(newValue, forKey: "WeatherIconSize")
+            sharedInstance.settingChanged()
         }
     }
 
@@ -148,6 +150,7 @@ class WatchSettings: NSObject, CnWeatherProtocol {
         set {
             sharedInstance._WeatherDrawColorAQI = newValue
             UserDefaults.standard.set(newValue, forKey: "DrawColorAQI")
+            sharedInstance.settingChanged()
         }
     }
 
@@ -171,6 +174,7 @@ class WatchSettings: NSObject, CnWeatherProtocol {
         set {
             sharedInstance._weather_location = newValue
             UserDefaults.standard.set(newValue, forKey: "WeatherLocation")
+            sharedInstance.settingChanged()
             sharedInstance.cnWeather?.beginTimer()
         }
     }
@@ -202,6 +206,10 @@ class WatchSettings: NSObject, CnWeatherProtocol {
         NotificationCenter.default.post(name: Notification.Name("WeatherDataUpdate"), object: self)
         //        NotificationCenter.default.post(Notification.init(name: Notification.Name("WeatherDataUpdate")))
         //        self.currentWatch?.setWeatherData(data: data)
+    }
+    
+    func settingChanged() -> Void {
+        NotificationCenter.default.post(name: Notification.Name("WatchSettingsChanged"),object: self)
     }
 
 

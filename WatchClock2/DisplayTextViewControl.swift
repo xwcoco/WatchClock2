@@ -68,11 +68,11 @@ class DisplayTextViewControl: UITableViewController {
         }
 
         if (indexPath.section == 5) {
-            if (indexPath.row == 0) {
+            if (indexPath.row == 5) {
                 let sw = cell.contentView.subviews[1] as? UISwitch
                 sw?.isOn = watchText!.showWeatchIcon
             } else {
-                self.setCheckmarkCell(indexPath: indexPath, checkIndex: watchText!.weatherTextStyle.rawValue, fromIndex: 1)
+                self.setCheckmarkCell(indexPath: indexPath, checkIndex: watchText!.weatherTextStyle.rawValue)
             }
         }
 
@@ -173,11 +173,11 @@ class DisplayTextViewControl: UITableViewController {
 
         }
 
-        if (indexPath.section == 5 && indexPath.row != 0) {
+        if (indexPath.section == 5 && indexPath.row != 5) {
             watch?.beginUpdate()
-            self.watchText?.weatherTextStyle = WeatherTextStyle(rawValue: indexPath.row - 1)!
+            self.watchText?.weatherTextStyle = WeatherTextStyle(rawValue: indexPath.row)!
             watch?.endUpdate()
-            self.setNewCheckmark(section: 5, fromIndex: 1, cellNum: WeatherTextStyle.WeatherTextPM10.rawValue, newIndex: watchText!.weatherTextStyle.rawValue)
+            self.setNewCheckmark(section: 5, cellNum: WeatherTextStyle.WeatherTextPM10.rawValue, newIndex: watchText!.weatherTextStyle.rawValue)
         }
     }
 

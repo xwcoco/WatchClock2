@@ -13,6 +13,14 @@ import SpriteKit
 class WatchSettingsViewControl: UITableViewController {
 
     var watch: WatchInfo = WatchInfo()
+    var editRowIndex : Int = -1
+    
+    public func setEditWatch(data : String) {
+        if let tmpWatch = WatchInfo.fromJSON(data: data) {
+            self.watch = tmpWatch
+        }
+    }
+
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (indexPath.section == 0) {
@@ -60,6 +68,9 @@ class WatchSettingsViewControl: UITableViewController {
         }
     }
     
+    @IBAction func DoneButtonClick(_ sender: Any) {
+        self.performSegue(withIdentifier: "unwindToManager", sender: self)
+    }
     
 }
 

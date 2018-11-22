@@ -1767,10 +1767,10 @@ Y29kZSBieSB4d29jbxBAbXNuLmNvbQ
             </objects>
             <point key="canvasLocation" x="8583" y="-361"/>
         </scene>
-        <!--Main View Control-->
+        <!--Tab Bar Controller-->
         <scene sceneID="l1l-cO-ALh">
             <objects>
-                <tabBarController id="DGa-x0-PNb" customClass="MainViewControl" customModule="WatchClock2" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="DGa-x0-PNb" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="iiD-VK-M7P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

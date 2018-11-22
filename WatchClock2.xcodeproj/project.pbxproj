@@ -21,7 +21,6 @@
 		4F10C64A21A658C10016305F /* HermesCAPECODOutline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F10C64221A658BB0016305F /* HermesCAPECODOutline.otf */; };
 		4F10C64B21A658C10016305F /* HermesCARRICK.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F10C64321A658BB0016305F /* HermesCARRICK.otf */; };
 		4F10C64C21A658C10016305F /* HermesESPACE.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F10C64421A658BC0016305F /* HermesESPACE.otf */; };
-		4F10C64E21A65CB50016305F /* MainViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10C64D21A65CB50016305F /* MainViewControl.swift */; };
 		4F2E45D021A43A1C006F3C19 /* FaceStyleViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2E45CF21A43A1C006F3C19 /* FaceStyleViewControl.swift */; };
 		4F2E45D221A4450A006F3C19 /* ImageSelectViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2E45D121A4450A006F3C19 /* ImageSelectViewControl.swift */; };
 		4F2E45D621A4A938006F3C19 /* ColorSelectViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2E45D521A4A938006F3C19 /* ColorSelectViewControl.swift */; };
@@ -112,7 +111,6 @@
 		4F10C64221A658BB0016305F /* HermesCAPECODOutline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HermesCAPECODOutline.otf; sourceTree = "<group>"; };
 		4F10C64321A658BB0016305F /* HermesCARRICK.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HermesCARRICK.otf; sourceTree = "<group>"; };
 		4F10C64421A658BC0016305F /* HermesESPACE.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HermesESPACE.otf; sourceTree = "<group>"; };
-		4F10C64D21A65CB50016305F /* MainViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControl.swift; sourceTree = "<group>"; };
 		4F2E45CF21A43A1C006F3C19 /* FaceStyleViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceStyleViewControl.swift; sourceTree = "<group>"; };
 		4F2E45D121A4450A006F3C19 /* ImageSelectViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewControl.swift; sourceTree = "<group>"; };
 		4F2E45D521A4A938006F3C19 /* ColorSelectViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectViewControl.swift; sourceTree = "<group>"; };
@@ -211,7 +209,6 @@
 				4F10C63D21A64DAF0016305F /* WeatherLocation.swift */,
 				4F10C63B21A64D660016305F /* WeatherLocationViewControl.swift */,
 				4F10C63F21A656330016305F /* AboutViewControl.swift */,
-				4F10C64D21A65CB50016305F /* MainViewControl.swift */,
 			);
 			path = WatchClock2;
 			sourceTree = "<group>";
@@ -416,7 +413,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FFC8AD121A40F9C003ACFAB /* Weather.swift in Sources */,
-				4F10C64E21A65CB50016305F /* MainViewControl.swift in Sources */,
 				4F2E45D821A4A983006F3C19 /* FaceCustomViewControl.swift in Sources */,
 				4F10C63821A641060016305F /* Toast.swift in Sources */,
 				4FD8FC6221A3AE73003E4936 /* ViewController.swift in Sources */,

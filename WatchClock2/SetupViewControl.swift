@@ -18,7 +18,7 @@ class SetupViewControl: UITableViewController {
             }
         }
         if (indexPath.section == 1) {
-            self.setLabelSliderCell(name: "Wather Icon Size", value: WatchSettings.WeatherIconSize, indexPath: indexPath)
+            self.setLabelSliderCell(name: "Weather Icon Size", value: WatchSettings.WeatherIconSize, indexPath: indexPath)
         }
         if (indexPath.section == 2) {
             if (WatchSettings.WeatherCity == "") {
@@ -56,7 +56,7 @@ class SetupViewControl: UITableViewController {
     @IBAction func IconSizeSliderValueChanged(_ sender: Any) {
         if let slider = sender as? UISlider {
             WatchSettings.WeatherIconSize = CGFloat(slider.value)
-            self.setLabelSliderCell(name: "Wather Icon Size", value: WatchSettings.WeatherIconSize, indexPath: IndexPath.init(row: 0, section: 1), setSlider: false)
+            self.setLabelSliderCell(name: "Weather Icon Size", value: WatchSettings.WeatherIconSize, indexPath: IndexPath.init(row: 0, section: 1), setSlider: false)
             
         }
         

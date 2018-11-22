@@ -68,9 +68,11 @@ class WatchManagerViewControl: UITableViewController {
         if let nv = unwindSegue.source as? WatchSettingsViewControl {
             if nv.editRowIndex == -1 {
                 let jsonData = nv.watch.toJSON()
+                print(jsonData)
                 self.addWatch(watchData: jsonData)
             } else {
                 let jsonData = nv.watch.toJSON()
+                print(jsonData)
                 self.WatchList[nv.editRowIndex] = jsonData
                 self.saveWatchToFile()
                 self.updateWatch(index: nv.editRowIndex)
@@ -85,6 +87,19 @@ class WatchManagerViewControl: UITableViewController {
         self.loadWatchFromFiles()
         
         NotificationCenter.default.addObserver(forName: Notification.Name("WatchSettingsChanged"), object: nil, queue: nil, using: UpdateAllWatch)
+        NotificationCenter.default.addObserver(forName: Notification.Name("WatchCollectionAddWatch"), object: nil, queue: nil, using: addWatchFromCollection)
+
+        
+        
+    }
+    
+    
+    func addWatchFromCollection(_ noti : Notification) {
+        if let watch = noti.object as? WatchInfo {
+            self.addWatch(watchData: watch.toJSON())
+        }
+        
+//        self.showMessage(msg: "表盘已增加")
     }
 
     func loadWatchFromFiles() {
@@ -183,6 +198,11 @@ class WatchManagerViewControl: UITableViewController {
             self.AddButton.isEnabled = false
         }
     }
+    
+    @IBAction func SyncButtonClick(_ sender: Any) {
+        self.SyncWithWatch()
+    }
+    
 
     private var watchIsConneted: Bool = false
     private var needSyncWithWatch: Bool = false
@@ -207,7 +227,8 @@ extension WatchManagerViewControl: WatchSessionDelegate {
 
     func showMessage(msg: String) -> Void {
         DispatchQueue.main.async {
-            self.navigationController?.view.makeToast(msg)
+            self.tabBarController?.view.makeToast(msg)
+//            self.navigationController?.view.makeToast(msg)
         }
     }
 

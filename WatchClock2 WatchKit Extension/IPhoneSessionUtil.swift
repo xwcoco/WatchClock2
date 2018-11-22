@@ -29,7 +29,7 @@ class IPhoneSessionUtil: NSObject, WCSessionDelegate {
 
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         print("activationState = ",activationState)
-        print(error)
+        print(error.debugDescription)
     }
 //
 //    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {

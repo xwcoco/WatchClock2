@@ -254,6 +254,50 @@ Y29kZSBieSB4d29jbxBAbXNuLmNvbQ
             </objects>
             <point key="canvasLocation" x="3670" y="922"/>
         </scene>
+        <!--Watch Collection-->
+        <scene sceneID="k0W-eA-bhn">
+            <objects>
+                <tableViewController id="lbz-ud-fPw" customClass="WatchCollectionsViewControl" customModule="WatchClock2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LMD-GV-CPV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="watchcollectionitem" rowHeight="200" id="Niv-qQ-X2d" customClass="WatchCollectionCell" customModule="WatchClock2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Niv-qQ-X2d" id="24M-G9-Q6f">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <skView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4YN-1l-XQy">
+                                            <rect key="frame" x="58" y="21" width="135" height="157.00000000000011"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </skView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZB-ha-7ZF">
+                                            <rect key="frame" x="263" y="83" width="32" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="add"/>
+                                            <connections>
+                                                <action selector="addButtonClick:" destination="Niv-qQ-X2d" eventType="touchUpInside" id="dLH-Ob-fFr"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lbz-ud-fPw" id="jtd-LA-wak"/>
+                            <outlet property="delegate" destination="lbz-ud-fPw" id="P4P-Qx-xAc"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Watch Collection" image="Collection" id="fTX-Oy-wka"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RDD-7R-5bo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4476" y="916.1919040479761"/>
+        </scene>
         <!--Weather Location-->
         <scene sceneID="aN1-LI-5dt">
             <objects>
@@ -275,7 +319,7 @@ Y29kZSBieSB4d29jbxBAbXNuLmNvbQ
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ys0-2X-0ES" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="15d-Xg-Q8h" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4364" y="911"/>
+            <point key="canvasLocation" x="3670" y="1750"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Xr3-md-wG7">
@@ -333,11 +377,18 @@ Y29kZSBieSB4d29jbxBAbXNuLmNvbQ
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Watch List" id="YWT-lc-UX8">
-                        <barButtonItem key="leftBarButtonItem" title="Edit" id="g0Q-dc-BWG">
-                            <connections>
-                                <action selector="EditButtonClick:" destination="J1W-ux-nKh" id="x4B-BY-rQC"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem title="Edit" id="g0Q-dc-BWG">
+                                <connections>
+                                    <action selector="EditButtonClick:" destination="J1W-ux-nKh" id="x4B-BY-rQC"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Sync" id="enf-Ar-RGn">
+                                <connections>
+                                    <action selector="SyncButtonClick:" destination="J1W-ux-nKh" id="gfc-I1-heh"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="2Vm-dK-xzO">
                             <connections>
                                 <segue destination="bV7-X8-tUU" kind="show" id="VUr-Mx-JCi"/>
@@ -1274,7 +1325,7 @@ Y29kZSBieSB4d29jbxBAbXNuLmNvbQ
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Onx-kf-dZA">
-                                                    <rect key="frame" x="36" y="0.0" width="323" height="43.5"/>
+                                                    <rect key="frame" x="35" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1292,11 +1343,11 @@ Y29kZSBieSB4d29jbxBAbXNuLmNvbQ
                                         <rect key="frame" x="0.0" y="503.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yos-IM-dPH" id="laC-VU-6D2">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dpx-Ru-HoS">
-                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1317,11 +1368,11 @@ Y29kZSBieSB4d29jbxBAbXNuLmNvbQ
                                         <rect key="frame" x="0.0" y="603.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6rx-BS-ABN" id="YJq-T8-ADV">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Font" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ka6-VC-jow">
-                                                    <rect key="frame" x="16" y="12" width="34.5" height="20.5"/>
+                                                    <rect key="frame" x="15" y="12" width="34.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1388,7 +1439,7 @@ Y29kZSBieSB4d29jbxBAbXNuLmNvbQ
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Weather Temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hRj-du-W0K">
-                                                    <rect key="frame" x="36" y="0.0" width="323" height="43.5"/>
+                                                    <rect key="frame" x="35" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1779,6 +1830,7 @@ Y29kZSBieSB4d29jbxBAbXNuLmNvbQ
                     <connections>
                         <segue destination="SeG-ZL-oPx" kind="relationship" relationship="viewControllers" id="d0c-wL-r1g"/>
                         <segue destination="oba-cn-Q8S" kind="relationship" relationship="viewControllers" id="aeV-2s-AOO"/>
+                        <segue destination="lbz-ud-fPw" kind="relationship" relationship="viewControllers" id="upm-PJ-b2f"/>
                         <segue destination="0vN-dz-0uo" kind="relationship" relationship="viewControllers" id="xgF-SU-dTg"/>
                     </connections>
                 </tabBarController>
@@ -1806,8 +1858,10 @@ Y29kZSBieSB4d29jbxBAbXNuLmNvbQ
         </scene>
     </scenes>
     <resources>
+        <image name="Collection" width="32" height="32"/>
         <image name="Hermes_watch_face_classic" width="162" height="197"/>
         <image name="about" width="32" height="32"/>
+        <image name="add" width="32" height="32"/>
         <image name="apple-watch" width="179" height="200"/>
         <image name="settings" width="32" height="32"/>
         <image name="watch" width="32" height="32"/>

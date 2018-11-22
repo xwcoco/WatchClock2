@@ -31,15 +31,19 @@ class ColorSelectViewControl: UITableViewController, ColorTableViewCellTouchDele
             switch slider {
             case self.redColorSlider:
                 r = CGFloat(slider.value)
+                print(r)
                 break
             case self.greenColorSlider:
                 g = CGFloat(slider.value)
+                print(g)
                 break
             case self.blueColorSlider:
                 b = CGFloat(slider.value)
+                print(b)
                 break
             case self.alphaColorSlider:
                 a = CGFloat(slider.value)
+                print(a)
                 break
             default:
                 break

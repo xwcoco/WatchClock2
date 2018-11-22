@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "UITableViewController.setLabelSliderCell(name:value:indexPath:setSlider:):ImageSelectViewControl.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "label.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WatchSettingsViewControl.prepare(for:sender:):WatchSetViewControl.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "segue.destination">
+            </PersistentString>
+            <PersistentString
+               value = "segue.identifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FaceStyleViewControl.prepare(for:sender:):FaceStyleViewControl.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath?.section">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FaceCustomViewControl.setFontSizeCell(size:indexPath:):FaceCustomViewControl.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "size">
+            </PersistentString>
+            <PersistentString
+               value = "label.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WatchManagerViewControl.EditButtonClick(_:):WatchManagerViewControl.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.EditButton">
+            </PersistentString>
+            <PersistentString
+               value = "self.EditButton.title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DisplayTextViewControl.viewDidDisappear(_:):DisplayTextViewControl.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.parent">
+            </PersistentString>
+            <PersistentString
+               value = "self.navigationController?">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

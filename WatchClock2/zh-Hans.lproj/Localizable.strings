@@ -1,0 +1,20 @@
+/* 
+  InfoPlist.strings
+  WatchClock2
+
+  Created by 徐卫 on 2018/11/22.
+  Copyright © 2018 xwcoco. All rights reserved.
+*/
+CFBundleDisplayName = "WatchClock2";
+"Edit" = "编辑";
+"Done" = "完成";
+"Background Image" = "背景图片";
+"Hour Style" = "时针风格";
+"Minute Style" = "分针风格";
+"Second Style" = "秒针风格";
+"empty" = "无";
+"(none)" = "无";
+"Dist To Center" = "距中心点距离";
+"Font Size" = "字体大小";
+"Weather Icon Size" = "天气图标大小";
+"Sync" = "同步";
